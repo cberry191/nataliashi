@@ -1,29 +1,44 @@
 // video loop
 
-const videoPlayer = document.getElementById("video-yoga");
+// const videoPlayer = document.getElementById("video-yoga");
 
-const yogaPlayList = [
-  "./assets/video/nat-01.mp4",
-  "./assets/video/nat-02.mp4",
-  "./assets/video/nat-03.mp4",
-];
+// const yogaPlayList = [
+//   "./assets/video/nat-01.mp4",
+//   "./assets/video/nat-02.mp4",
+//   "./assets/video/nat-03.mp4",
+// ];
 
-let currentVideoIndex = 0;
+// let currentVideoIndex = 0;
 
-const playNextVideo = () => {
-  videoPlayer.src = yogaPlayList[currentVideoIndex];
-  videoPlayer.play();
-};
+// const playNextVideo = () => {
+//   videoPlayer.src = yogaPlayList[currentVideoIndex];
+//   videoPlayer.play();
+// };
 
-videoPlayer.addEventListener("ended", () => {
-  currentVideoIndex++;
-  if (currentVideoIndex >= yogaPlayList.length) {
-    currentVideoIndex = 0;
-  }
-  playNextVideo();
+// videoPlayer.addEventListener("ended", () => {
+//   currentVideoIndex++;
+//   if (currentVideoIndex >= yogaPlayList.length) {
+//     currentVideoIndex = 0;
+//   }
+//   playNextVideo();
+// });
+
+// playNextVideo();
+
+// nav hamburger
+document.getElementById('hamburger').addEventListener('click', function () {
+  this.classList.toggle('open');
+  document.getElementById('nav').classList.toggle('open');
+  document.getElementById('nav-links').classList.toggle('open');
+  document.getElementById('hero-video-container').classList.toggle('open');
 });
 
-playNextVideo();
+document.getElementById('menu-close').addEventListener('click', function () {
+  document.getElementById('nav').classList.toggle('open');
+  document.getElementById('nav-links').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+  document.getElementById('hero-video-container').classList.toggle('open');
+});
 
 // image slideshow
 
@@ -40,7 +55,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 
 showSlides();

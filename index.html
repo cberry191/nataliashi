@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Natalia Shimarova Yoga</title>
-  <link rel="stylesheet" type="text/css" href="./style.css" />
   <script src="./script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="./style-web.css" />
+  <link rel="stylesheet" type="text/css" href="./style-media.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <div class="nav">
+  <div class="nav" id="nav">
     <div class="title">
-      <h1 style="align-self: end">Natalia</h1>
-      <h1 style="align-self: start">Shimarova</h1>
+      <!-- <h1 style="align-self: end">Natalia</h1>
+      <h1 style="align-self: start">Shimarova</h1> -->
+      <img src="./assets/images/logo.png" alt="Natalia Shimarova" />
     </div>
 
-    <ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li class="menu-close" id="menu-close">
+        <p>X</p>
+      </li>
       <li>
         <a href="#yoga">YOGA</a>
       </li>
@@ -27,33 +40,42 @@
     </ul>
   </div>
 
-  <!-- <div class="hero">
-      <h1>Yoga Teacher</h1>
-      <h1>Sound Healing Practitioner</h1>
-      <h1>Brand Producer</h1>
-    </div> -->
-
-  <div class="container">
-    <div class="pfp-container">
-      <img src="./assets/images/pfp.png" alt="Natalia Shimarova" class="pfp" />
-    </div>
-    <div class="hero">
-      <h1>Yoga Teacher</h1>
-      <h1>Sound Healing Practitioner</h1>
-      <h1>Brand Producer</h1>
-      <div class="button">
-        <p>CONTACT ME</p>
-        <p>></p>
+  <div class="hero">
+    <!-- <img src="./assets/images/header-3.png" alt="Natalia Shimarova" /> -->
+    <div class="hero-video-container" id="hero-video-container">
+      <video src="./assets/video/IMG_01.MOV" autoplay muted loop></video>
+      <div class="banner">
+        <h1>Habitual Health Collective</h1>
       </div>
     </div>
-  </div>
-  <div class="motif">
-    <img src="./assets/icons/motif-2.svg" alt="Motif" />
+
+
+    <div class="blurb">
+      <p>
+        Embrace wellness and creativity with me for a unique blend of yoga and sound healing. I invite
+        you to explore the harmony of mind, body, and spirit by embarking on a journey of transformative
+        practices to elevate your well-being and unleash creative potential. Connect with me and find inner
+        peace, vibrant health, and authentic self-expression.
+      </p>
+      <p>
+        In addition to yoga and sound healing, I offer personalized brand production services to help you cultivate your
+        unique presence. I understand the power of authentic storytelling and user-generated content and can guide you
+        in
+        building a compelling brand that resonates with your audience. Together, we can
+        create a dynamic and engaging platform that amplifies
+        your voice and vision.
+      </p>
+    </div>
+
+    <div class="button">
+      <p>CONTACT</p>
+      <p>></p>
+    </div>
   </div>
 
 
   <div class="container">
-    <video id="video-yoga" class="videoplayer" autoplay muted></video>
+    <video src="./assets/video/yoga-01.mp4" class="video-player media" autoplay muted loop></video>
     <div class="blurb">
       <h1>Yoga</h1>
       <p>
@@ -70,6 +92,7 @@
   </div>
 
   <div class="container">
+    <img src="./assets/images/sound-healing-01.jpg" alt="Sound Healing" class="solo-img media" />
     <div class="blurb">
       <h1>Sound Healing</h1>
       <p>Lorem ipsum</p>
@@ -78,12 +101,10 @@
         <p>></p>
       </div>
     </div>
-    <img src="./assets/images/sound-healing-01.jpg" alt="Sound Healing" class="solo-img" />
-    <!-- <video class="videoplayer" src="./assets/video/sound-healing.mp4" autoplay muted loop></video> -->
   </div>
 
   <div class="container">
-    <div class="slideshow">
+    <div class="slideshow media">
       <div class="slide fade">
         <img src="./assets/images/brand-production-01.jpg" alt="Image 1" />
       </div>
@@ -94,7 +115,6 @@
         <img src="./assets/images/brand-production-03.jpg" alt="Image 3" />
       </div>
     </div>
-    <!-- <img src="./assets/images/brand-production-01.jpg" alt="Brand Production" /> -->
     <div class="blurb">
       <h1>Brand Production</h1>
       <p>Lorem ipsum</p>
@@ -107,15 +127,18 @@
   </div>
 
   <div class="contact">
-    <h1>Get in touch</h1>
-    <p>
-      I am always open to new opportunities and collaborations. If you would
-      like to work with me, please feel free to reach out.
-    </p>
-    <div class="button">
-      <p>CONTACT ME</p>
-      <p>></p>
+    <div class="blurb">
+      <h1>Get in touch</h1>
+      <p>
+        I am always open to new opportunities and collaborations. If you would
+        like to work with me, please feel free to reach out.
+      </p>
+      <div class="button">
+        <p>CONTACT ME</p>
+        <p>></p>
+      </div>
     </div>
+
     <div class="socials">
       <div>
         <p>YOGA</p>
@@ -128,6 +151,20 @@
       <div>
         <p>Nataliashi Yoga</p>
         <img src="./assets/icons/icons8-youtube.svg" alt="YouTube" class="socials-icon" />
+      </div>
+    </div>
+    <div class="socials-posts">
+      <div>
+        <p>INSTA POST</p>
+      </div>
+      <div>
+        <p>INSTA POST</p>
+      </div>
+      <div>
+        <p>INSTA POST</p>
+      </div>
+      <div>
+        <p>INSTA POST</p>
       </div>
     </div>
   </div>
