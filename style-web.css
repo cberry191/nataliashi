@@ -8,6 +8,11 @@
   src: url(./assets/fonts/Karla-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Amatic;
+  src: url(./assets/fonts/AmaticSC-Regular.ttf);
+}
+
 body {
   font-family: Karla;
   margin: 0;
@@ -18,10 +23,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 h1 {
-  font-family: EB Garamond;
+  font-family: serif;
+  /* font-family: Playfair Display; */
   font-weight: 100;
 }
 
@@ -31,6 +38,7 @@ h1 {
   padding: 2%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 /* .title {
@@ -111,15 +119,38 @@ a:hover {
 }
 
 .banner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
-    color: black;
-    text-align: center;
-    padding: 5%;
-    box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
+  color: black;
+  text-align: center;
+  padding: 5%;  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-title {
+  font-family: Amatic;
+  font-size: 5em;
+  margin: 0;
+}
+
+.banner div {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding: 2%;
+}
+
+.banner div h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+
 }
 
 .container {

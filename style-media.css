@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
   .title img {
     width: 25%;
     height: 25%;
@@ -8,6 +12,10 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .title {
+    padding-left: 5%;
   }
 
   .nav ul {
@@ -72,6 +80,19 @@
 
   .banner {
     padding: 1%;
+  }
+
+  .banner-title {
+    font-size: 3em;
+  }
+ 
+  .banner div {
+   width: 20%;
+   padding: 5%; 
+  }
+
+  .banner div h1 {
+    font-size: 0.75em;
   }
 
   .container {
