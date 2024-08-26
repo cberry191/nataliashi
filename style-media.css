@@ -101,6 +101,11 @@
       width: 100%;
   }
 
+  .contact {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
   .blurb {
     padding: 5%;
   }
@@ -130,6 +135,10 @@
     height: 400px;
   }
 
+  .socials-container {
+    width: 100%;
+  }
+
   .socials {
     margin-top: 15%;
     flex-direction: column;
@@ -139,6 +148,10 @@
 
   .socials div {
     justify-content: center;
+  }
+
+  .socials-posts {
+    gap: 2%;
   }
 
   .socials,
