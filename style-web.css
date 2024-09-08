@@ -41,24 +41,13 @@ h1 {
   width: 100%;
 }
 
-/* .title {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  margin: 0;
-  padding: 0;
-} */
-
-.title h1 {
-  font-weight: 100;
-  line-height: 0.5em;
-  margin: 0;
-  padding: 0;
+.title {
+  padding-left: 5%;
 }
 
 .title img {
-  width: 30%;
-  height: 30%;
+  width: 15%;
+  height: 15%;
 }
 
 .nav ul {
@@ -126,7 +115,8 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
   color: black;
   text-align: center;
-  padding: 5%;  
+  justify-content: center;
+  padding: 2%;  
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -158,12 +148,29 @@ a:hover {
   justify-content: center;
 }
 
-.container {
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 400px; */
   margin-bottom: 200px;
 }
 
@@ -171,7 +178,7 @@ a:hover {
   margin-top: 10%;
 }
 
-.container:nth-child(even) .media{
+/* .container:nth-child(even) .media{
   order: 2;
 }
 
@@ -185,35 +192,10 @@ a:hover {
 
 .container:nth-child(odd) .blurb {
   order: 2;
-}
+} */
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: center;
-  margin-bottom: 200px;
-}
-
-.contact p {
-  border-left: 1px solid black;
-  padding-left: 10%;
-}
-
-.contact input {
-  width: 100%;
-  height: 200px;
-  margin: 10px 0;
-  padding: 0 10px;
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: center;
+.media {
+  height: 400px;
 }
 
 .video-player {
@@ -223,19 +205,6 @@ a:hover {
 
 video {
   object-fit: cover;
-}
-
-.blurb {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 2%;
-  box-sizing: border-box;
-}
-
-.blurb p {
-  border-left: 1px solid black;
-  padding-left: 10%;
 }
 
 .solo-img {
@@ -276,6 +245,19 @@ img {
   }
 }
 
+.blurb {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.blurb p {
+  border-left: 1px solid black;
+  padding-left: 10%;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -313,6 +295,35 @@ img {
 
 a .button:hover {
   color: black;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.contact p {
+  border-left: 1px solid black;
+  padding-left: 10%;
+}
+
+.contact input {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
 
 .socials-container {
